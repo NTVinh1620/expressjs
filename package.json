@@ -6,7 +6,8 @@
     "scripts": {
         "start": "nodemon --inspect src/index.js",
         "watch": "node-sass --watch src/resources/scss --output src/public/css",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install"
     },
     "keywords": [
         "rt",
@@ -17,12 +18,12 @@
     "author": "ntvinh",
     "license": "ISC",
     "lint-staged": {
-        "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write docs package.json"
+      "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write docs package.json"
     },
     "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
     },
     "dependencies": {
         "express": "^4.18.1",
