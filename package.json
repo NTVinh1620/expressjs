@@ -8,7 +8,8 @@
         "start": "nodemon --inspect src/index.js",
         "watch": "node-sass --watch src/resources/scss --output src/public/css",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "pre-commit": "lint-staged"
     },
     "keywords": [
         "rt",
@@ -32,7 +33,7 @@
         "node-sass": "^7.0.1"
     },
     "devDependencies": {
-        "husky": "^4.2.5",
+        "husky": "^8.0.0",
         "lint-staged": "^13.0.3",
         "morgan": "^1.10.0",
         "nodemon": "^2.0.19",
