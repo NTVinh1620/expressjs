@@ -19,8 +19,8 @@ app.use(express.json());
 
 app.engine('.hbs', engine({ extname: '.hbs' }));
 app.set("view engine", '    .hbs');
-            app.set('views', './src/resources/views');
+        app.set('views', './src/resources/views');
 
-    route(app);
+            route(app);
 
-        app.listen(3000);
+    app.listen(3000);

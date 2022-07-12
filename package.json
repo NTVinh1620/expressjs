@@ -18,11 +18,11 @@
     "author": "ntvinh",
     "license": "ISC",
     "lint-staged": {
-      "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write docs package.json"
+        "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write package.json"
     },
     "husky": {
         "hooks": {
-          "pre-commit": "lint-staged"
+            "pre-commit": "lint-staged"
         }
     },
     "dependencies": {
